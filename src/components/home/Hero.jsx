@@ -14,7 +14,7 @@ const Hero = () => {
             <img
               src={avatar}
               alt="Avatar"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white drop-shadow-lg">
@@ -38,7 +38,7 @@ const Hero = () => {
               View Projects
             </Link>
             <Link
-              to="/contact"
+              to="/"
               className="border border-green-400 text-green-400 px-6 py-3 rounded-md hover:bg-green-400 hover:text-gray-900 hover:scale-105 transition-transform shadow-md"
             >
               My CV

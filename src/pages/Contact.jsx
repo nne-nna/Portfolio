@@ -25,15 +25,15 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_ppyzhkm', 
+        'template_0nyou01', 
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_name: 'Nnenna', // Your name
+          to_name: 'Nnenna', 
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'EGAlSYDokuM1ZZv9m'
       );
 
       setStatus({
@@ -66,7 +66,7 @@ const Contact = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/nnenna-ezidiegwu',
+      href: 'https://www.linkedin.com/in/nnenna-ezidiegwu-23404124b/',
       icon: Linkedin,
       text: 'linkedin.com/in/nnenna-ezidiegwu'
     }

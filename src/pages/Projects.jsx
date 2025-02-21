@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <main className="min-h-screen pt-24 pb-16 bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-4 mb-16">
+        <div className="space-y-4 mb-10">
           <h1 className="text-4xl font-bold text-left animate-fade-in">
             My <span className="text-green-400 inline-block hover:scale-105 transition-transform duration-300">Projects</span>
           </h1>
@@ -30,7 +30,6 @@ const Projects = () => {
 
               {/* Flexible Container */}
               <div className="grid lg:grid-cols-2 gap-8">
-                {/* Image Container with Aspect Ratio */}
                 <div className="relative">
                   <div className="aspect-video w-full overflow-hidden rounded-xl bg-gray-800/50">
                     <img 
@@ -116,25 +115,28 @@ const Projects = () => {
         {/* Stats Section */}
         <div className="mt-24 relative">
           <div className="absolute inset-0 bg-green-400/5 rounded-2xl backdrop-blur-sm" />
-          <div className="relative grid grid-cols-2 lg:grid-cols-4 gap-8 p-8">
-            {[ 
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+            {[
               { value: projects.length, label: "Projects Completed", icon: "📊" },
               { value: "100%", label: "Client Satisfaction", icon: "⭐" },
               { value: "500+", label: "Development Hours", icon: "⚡" },
               { value: "4", label: "Core Technologies", icon: "🛠" }
             ].map((stat, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-gray-800/50 p-6 rounded-xl text-center hover:bg-gray-700/50 
                 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-400/10"
               >
-                <div className="text-4xl mb-3">{stat.icon}</div>
-                <h3 className="text-3xl font-bold text-green-400 mb-2">{stat.value}</h3>
-                <p className="text-gray-400 font-medium">{stat.label}</p>
+                <div className="text-3xl sm:text-4xl mb-3">{stat.icon}</div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-green-400 mb-2 break-words">
+                  {stat.value}
+                </h3>
+                <p className="text-gray-400 font-medium break-words">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
+
       </div>
     </main>
   );

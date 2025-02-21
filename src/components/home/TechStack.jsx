@@ -18,15 +18,10 @@ const TechStack = () => {
       <div className="absolute top-0 left-0 w-72 h-72 bg-green-400 rounded-full blur-3xl opacity-30 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-green-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
-          className="text-3xl font-bold mb-12 text-center text-white drop-shadow-lg"
-        >
+        <h2 className="text-3xl font-bold mb-12 text-center text-white drop-shadow-lg">
           Tech <span className="text-green-400">Stack</span>
-        </motion.h2>
+        </h2>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {technologies.map((tech, index) => (
             <motion.div

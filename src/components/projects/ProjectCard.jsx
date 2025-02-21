@@ -7,7 +7,7 @@ const ProjectCard = ({ project, index }) => {
   const isEven = index % 2 === 0;
   
   return (
-    <div className="mb-20">
+    <div className="mb-15">
       <h2 className="text-4xl font-bold mb-6 text-green-400">
         {project.title}
       </h2>
