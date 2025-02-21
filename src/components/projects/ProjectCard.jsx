@@ -14,7 +14,7 @@ const ProjectCard = ({ project, index }) => {
       
       <div className={`flex flex-col lg:flex-row gap-8 ${!isEven && 'lg:flex-row-reverse'}`}>
         <div className="lg:w-1/2">
-          <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+          <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg border border-green-400">
             <img
               src={project.image}
               alt={project.title}
@@ -33,7 +33,7 @@ const ProjectCard = ({ project, index }) => {
             <ul className="text-sm text-gray-400 space-y-1">
               {project.features.map((feature, i) => (
                 <li key={i} className="flex items-start">
-                  <span className="mr-2">•</span>
+                  <span className="mr-2 text-green-400">•</span>
                   <span>{feature}</span>
                 </li>
               ))}
@@ -46,7 +46,7 @@ const ProjectCard = ({ project, index }) => {
               {project.tech.map((tech, i) => (
                 <span 
                   key={i} 
-                  className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded"
+                  className="text-xs bg-gray-800 text-green-400 px-2 py-1 rounded border border-green-400"
                 >
                   {tech}
                 </span>
@@ -59,7 +59,7 @@ const ProjectCard = ({ project, index }) => {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+              className="px-6 py-2 bg-green-400 text-gray-900 rounded-md hover:bg-green-500 hover:scale-105 transition-transform"
             >
               View Live
             </a>
@@ -67,7 +67,7 @@ const ProjectCard = ({ project, index }) => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-600 hover:text-white transition-colors"
+              className="px-6 py-2 border border-green-400 text-green-400 rounded-md hover:bg-green-400 hover:text-gray-900 hover:scale-105 transition-transform"
             >
               Repository
             </a>

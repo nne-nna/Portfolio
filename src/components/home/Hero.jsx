@@ -41,7 +41,7 @@ const Hero = () => {
               to="/contact"
               className="border border-green-400 text-green-400 px-6 py-3 rounded-md hover:bg-green-400 hover:text-gray-900 hover:scale-105 transition-transform shadow-md"
             >
-              Contact Me
+              My CV
             </Link>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { siGithub } from 'simple-icons/icons';
 
 const ContactSection = () => {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-12 text-center">
           Let's <span className="text-green-400">Connect</span>
@@ -16,7 +16,7 @@ const ContactSection = () => {
           </p>
           <div className="flex space-x-6">
             <a
-              href="mailto:your.email@example.com"
+              href="ezidiegwunnennafavour@gmail.com"
               className="flex items-center text-green-400 hover:text-green-300"
             >
               <Mail className="w-6 h-6 mr-2" />
@@ -24,7 +24,7 @@ const ContactSection = () => {
             </a>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/nne-nna/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-green-400 hover:text-green-300"
@@ -38,7 +38,7 @@ const ContactSection = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/nnenna-ezidiegwu"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-green-400 hover:text-green-300"

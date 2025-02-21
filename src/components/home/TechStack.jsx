@@ -8,20 +8,22 @@ const TechStack = () => {
     { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-    { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+    { name: "Tailwind CSS", icon: "https://www.svgrepo.com/show/333609/tailwind-css.svg" },
     { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-72 h-72 bg-green-400 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-green-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="text-3xl font-bold mb-12 text-center"
+          className="text-3xl font-bold mb-12 text-center text-white drop-shadow-lg"
         >
           Tech <span className="text-green-400">Stack</span>
         </motion.h2>
@@ -34,9 +36,9 @@ const TechStack = () => {
               viewport={{ once: true }}
               transition={{ 
                 duration: 0.2,
-                delay: index * 0.02 // Reduced delay for smoother appearance
+                delay: index * 0.02
               }}
-              className="bg-purple-900/20 p-6 rounded-xl text-center hover:bg-purple-800/30 transition-all duration-300 transform hover:scale-105"
+              className="bg-gray-800/50 p-6 rounded-xl text-center hover:bg-gray-700/70 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <img src={tech.icon} alt={tech.name} className="w-12 h-12 mx-auto mb-3" />
               <span className="text-green-400">{tech.name}</span>
@@ -47,6 +49,5 @@ const TechStack = () => {
     </section>
   );
 };
-
 
 export default TechStack;
