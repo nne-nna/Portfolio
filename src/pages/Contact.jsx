@@ -11,6 +11,13 @@ const Contact = () => {
   const [status, setStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // X (Twitter) icon component
+  const XIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+    </svg>
+  );
+
   const handleChange = (e) => {
     setFormData(prev => ({
       ...prev,
@@ -69,6 +76,12 @@ const Contact = () => {
       href: 'https://www.linkedin.com/in/nnenna-ezidiegwu-23404124b/',
       icon: Linkedin,
       text: 'linkedin.com/in/nnenna-ezidiegwu'
+    },
+    {
+      name: 'Twitter',
+      href: 'https://twitter.com/neneofdgoodlife/',
+      icon: XIcon,
+      text: 'twitter.com/neneofdgoodlife'
     }
   ];
 
@@ -182,7 +195,11 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 text-gray-300 hover:text-green-400 transition-colors group"
                   >
-                    <link.icon className="w-6 h-6" />
+                    {typeof link.icon === 'function' ? (
+                      React.createElement(link.icon)
+                    ) : (
+                      <link.icon />
+                    )}
                     <span className="text-sm group-hover:underline">{link.text}</span>
                   </a>
                 ))}
