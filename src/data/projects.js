@@ -53,7 +53,7 @@ export const projects = [
     title: "Gadgety",
     description: "A tech store for exploring and purchasing the latest gadgets",
     features: [
-      "Home & Search Feature",
+      "Home & Search Features",
       "Product Details & Reviews",
       "Easy Checkout",
       "Responsive Design",
