@@ -44,7 +44,7 @@ export const projects = [
       "Optimized Performance",
       "Interactive Contact Form"
     ],
-    tech: ["React", "Tailwind CSS", "Framer Motion", "Firebase"],
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
     image: skinscribe,
     github: "https://github.com/nne-nna/skincare-blogsite",
     demo: "https://skinscribe.vercel.app/"
@@ -59,7 +59,7 @@ export const projects = [
       "Responsive Design",
       "Wishlist & Favorites"
     ],
-    tech: ["React", "Tailwind CSS", "Firebase", "Context API"],
+    tech: ["React", "Tailwind CSS", "Context API"],
     image: gadgety,
     github: "https://github.com/nne-nna/TechShop",
     demo: "https://gadgety.vercel.app/"

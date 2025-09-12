@@ -55,10 +55,6 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-2 text-sm text-gray-400">
             <p>© {currentYear} Nnenna Ezidiegwu.</p>
-            <p className="hidden sm:block">|</p>
-            <p className="flex items-center gap-1">
-              Built with <Heart className="w-4 h-4 text-green-400" /> using React & Tailwind
-            </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">

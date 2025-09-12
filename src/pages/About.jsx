@@ -22,6 +22,16 @@ const About = () => {
             </p>
             <h2 className="text-2xl font-semibold mb-4">Professional Experience</h2>
             <div className="mb-6">
+              <h3 className="text-xl text-green-400 mb-2">Lead Frontend Developer (Contract)</h3>
+              <p className="text-gray-300 font-medium">Emmounts Technologies</p>
+              <p className="text-gray-400 italic mb-2">June 2025 – August 2025</p>
+              <ul className="text-gray-400 space-y-2">
+                <li>• Led frontend development for client-facing projects using React and TailwindCSS, achieving 95% cross-device responsiveness</li>
+                <li>• Built reusable UI components that improved development speed by 35%</li>
+                <li>• Collaborated with backend developers and product managers to deliver 2 projects within deadlines</li>
+              </ul>
+            </div>
+            <div className="mb-6">
               <h3 className="text-xl text-green-400 mb-2">Frontend Developer Intern</h3>
               <p className="text-gray-300 font-medium">Foretrust Digital Consulting Limited</p>
               <p className="text-gray-400 italic mb-2">4 months</p>
@@ -63,7 +73,6 @@ const About = () => {
                 <h3 className="text-green-400 mb-2">Tools & Others</h3>
                 <ul className="text-gray-400">
                   <li>• Git & GitHub</li>
-                  <li>• Firebase</li>
                   <li>• Tailwind CSS</li>
                   <li>• Responsive Design</li>
                   <li>• RESTful APIs</li>
