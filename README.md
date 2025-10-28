@@ -37,6 +37,8 @@ A modern, responsive portfolio website showcasing my frontend development skills
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 
+---
+```
 ## Project Structure
 
 portfolio/
@@ -69,7 +71,8 @@ portfolio/
 │   └── index.js
 ├── package.json
 └── README.md
-
+```
+---
 ## Key Components
 
 ### Navigation
@@ -106,7 +109,7 @@ portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/nne-nna/portfolio.git
+   git clone https://github.com/nne-nna/Portfolio
    cd portfolio
 
 2. **Install dependencies**
