@@ -38,10 +38,11 @@ A modern, responsive portfolio website showcasing my frontend development skills
 - **Prettier** - Code formatting
 
 ## Project Structure
+
 portfolio/
 ├── public/
 │   ├── logo.png
-│   └── nnenna-cv.pdf
+│   └── nnenna's-resume.pdf
 ├── src/
 │   ├── assets/
 │   │   └── images/
