@@ -1,18 +1,53 @@
 import metricspace from '../assets/images/metricspace.png';
+import payease from '../assets/images/payease.png';
 import shopique from '../assets/images/shopique.png';
 import skinscribe from '../assets/images/skinscribe.png';
 import gadgety from '../assets/images/gadgety.png';
 
 export const projects = [
   {
-    title: "MetricSpace",
-    description: "A powerful business dashboard for streamlined management & data analysis",
+    title: "PayEase",
+    description: "A full-stack bill payment platform with secure authentication, wallet funding, password reset, and utility payments across major Nigerian providers.",
     features: [
-      "Collapsible Sidebar w/ Theme Support",
-      "Profile Management w/ Instant Updates",
-      "Real-time Inventory Stats & Smart Notifications",
-      "Financial Reports w/ Charts & Insights",
-      "Advanced Product Search & Customer Management",
+      "JWT Authentication + Forgot/Reset Password Flow",
+      "Wallet Funding via Paystack Redirect + Verification",
+      "Bill Payments for Electricity, Airtime, Data, and Cable TV",
+      "Transaction History, Notifications, and Analytics",
+      "Profile Management with Production Deployment on Vercel + Render",
+    ],
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Axios",
+      "React Router",
+      "Context API",
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "Spring Data JPA",
+      "PostgreSQL",
+      "Brevo",
+      "Paystack",
+      "VTPass",
+      "Docker",
+      "Render",
+      "Vercel"
+    ],
+    image: payease,
+    github: "https://github.com/nne-nna/bill-payment-system",
+    demo: "https://payease-web.vercel.app/"
+  },
+  {
+    title: "MetricSpace",
+    description: "A powerful business dashboard for streamlined management and data analysis.",
+    features: [
+      "Collapsible Sidebar with Theme Support",
+      "Profile Management with Instant Updates",
+      "Real-time Inventory Stats and Smart Notifications",
+      "Financial Reports with Charts and Insights",
+      "Advanced Product Search and Customer Management",
     ],
     tech: ["React", "React Hooks", "React Router", "Context API", "Axios", "Tailwind CSS", "Chart.js", "PropTypes"],
     image: metricspace,
@@ -21,7 +56,7 @@ export const projects = [
   },
   {
     title: "Shopique",
-    description: "A sleek and user-friendly e-commerce website for ultimate shopping experience",
+    description: "A sleek and user-friendly e-commerce website for a smooth shopping experience.",
     features: [
       "Responsive design across devices",
       "Dynamic product gallery",
@@ -36,13 +71,13 @@ export const projects = [
   },
   {
     title: "SkinScribe",
-    description: "A modern skincare blog website with seamless user experience",
+    description: "A modern skincare blog website with a seamless user experience.",
     features: [
       "Fully responsive design",
       "Engaging animations",
-      "Dynamic Content Management",
-      "Optimized Performance",
-      "Interactive Contact Form"
+      "Dynamic content management",
+      "Optimized performance",
+      "Interactive contact form"
     ],
     tech: ["React", "Tailwind CSS", "Framer Motion"],
     image: skinscribe,
@@ -51,13 +86,13 @@ export const projects = [
   },
   {
     title: "Gadgety",
-    description: "A tech store for exploring and purchasing the latest gadgets",
+    description: "A tech store for exploring and purchasing the latest gadgets.",
     features: [
-      "Home & Search Features",
-      "Product Details & Reviews",
-      "Easy Checkout",
-      "Responsive Design",
-      "Wishlist & Favorites"
+      "Home and search features",
+      "Product details and reviews",
+      "Easy checkout",
+      "Responsive design",
+      "Wishlist and favorites"
     ],
     tech: ["React", "Tailwind CSS", "Context API"],
     image: gadgety,

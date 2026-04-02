@@ -113,23 +113,23 @@ portfolio/
    cd portfolio
 
 2. **Install dependencies**
-bashnpm install
-// or
-yarn install
+   bashnpm install
+   // or
+   yarn install
 
 3. **Set up environment variables**
-Create a .env file in the root directory:
-textREACT_APP_EMAILJS_SERVICE_ID=your_service_id
-REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+   Create a .env file in the root directory:
+   textREACT_APP_EMAILJS_SERVICE_ID=your_service_id
+   REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+   REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
 
 4. **Start the development server**
-bashnpm start
-// or
-yarn start
+   bashnpm start
+   // or
+   yarn start
 
 4. **Open your browser**
-Navigate to http://localhost:5174/
+   Navigate to http://localhost:5174/
 
 ### Building for Production
 
