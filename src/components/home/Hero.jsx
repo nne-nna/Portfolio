@@ -37,7 +37,7 @@ const Hero = () => {
                 View Projects
               </Link>
               <Link
-                  to="/nnenna's-resume.pdf"
+                  to="/Ezidiegwu Nnenna Favour's Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-green-400 text-green-400 px-6 py-3 rounded-md hover:bg-green-400 hover:text-gray-900 hover:scale-105 transition-transform shadow-md"
